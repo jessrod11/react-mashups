@@ -12,6 +12,19 @@ class App extends Component {
     animals: [],
   }
 
+  formSubmitEvent = (newAnimalListing) => {
+    animalRequest.postRequest(newAnimalListing)
+      .then(() => {
+        animalRequest.getRequest()
+          .then((animals) => {
+            this.setState({animals});
+          });
+      })
+      .catch((err) => {
+        console.error('error while posting Animal Listing', err);
+      });
+  }
+
   componentDidMount () {
     connection();
     animalRequest.getRequest()
@@ -30,7 +43,7 @@ class App extends Component {
           <Animals animals={this.state.animals}/>
         </div>
         <div className="col-md-4 text-center">
-          <Form />
+          <Form onSubmit={this.formSubmitEvent}/>
         </div>
       </div>
     );
