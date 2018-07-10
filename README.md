@@ -1,7 +1,7 @@
 # React Mashups
 
 ## Description
-Created a simple React application that allows you to input animal data and submit to the right with other information that was already submitted to the page
+Created a simple React application that allows you to input animal data and submit to the left with other information that was already submitted to the page
 
 ## Screenshot
 ![Webpage](https://raw.githubusercontent.com/jessrod11/react-mashups/master/screenshot/Screen%20Shot%202018-07-10%20at%2012.54.45%20PM.png)
