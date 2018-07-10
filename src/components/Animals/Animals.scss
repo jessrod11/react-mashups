@@ -1,13 +1,20 @@
 .Animals {
-  background-color: limegreen;
+  // background-color: transparent;
+  margin: 0;
+  padding: 0;
 }
 
 .animal-img {
-    position: relative;
-    float: left;
-    width:  100px;
-    height: 100px;
-    background-position: 50% 50%;
-    background-repeat:   no-repeat;
-    background-size:     cover;
+  max-width: 90%;
+  max-height: 200px;
+  border-radius: 5%;
+}
+
+.animal-card {
+  border: 5px solid coral;
+  background-color: burlywood;
+  padding: 10px;
+  height: 425px;
+  width: 30%;
+  margin: 1%;
 }

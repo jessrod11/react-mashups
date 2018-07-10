@@ -25,11 +25,11 @@ class App extends Component {
 
   render () {
     return (
-      <div className="wrapper">
-        <div className="col-md-6 text-center">
+      <div className="App">
+        <div className="col-md-8 text-center">
           <Animals animals={this.state.animals}/>
         </div>
-        <div className="col-md-6 text-center">
+        <div className="col-md-4 text-center">
           <Form />
         </div>
       </div>
