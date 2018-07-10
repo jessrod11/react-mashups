@@ -11,7 +11,7 @@ class Animals extends React.Component {
           <h2
             key={animal.id}
           >{animal.name}</h2>
-          <img class="animal-img" src={animal.imgUrl} alt="animal pic"/>
+          <img className="animal-img" src={animal.imgUrl} alt="animal pic"/>
           <h3>{animal.description}</h3>
         </div>
       );
