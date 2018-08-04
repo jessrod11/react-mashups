@@ -37,7 +37,6 @@ class Form extends React.Component {
   formSubmit = (e) => {
     const {onSubmit} = this.props;
     const {newAnimalListing} = this.state;
-    console.error('new animal', newAnimalListing);
     e.preventDefault();
     if (
       newAnimalListing.name &&
